@@ -66,6 +66,9 @@ tts:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+panel_iframe: !include panels.yaml
+
+
 
 # ZWave setup
 #HUB
