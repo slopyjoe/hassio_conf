@@ -5,4 +5,4 @@ terminal:
 configurator:
     title: Configurator
     icon: mdi:wrench
-    url: "http://192.168.168.2:3218"
+    url: "https://192.168.168.2:3218"

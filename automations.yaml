@@ -1,0 +1,39 @@
+- alias: Family Room Lamp - Wake Up
+  trigger:
+  - platform: time
+    at: 06:30:00
+  action:
+  - service: light.turn_on
+    data:
+      entity_id:
+      - light.family_room_lamp_level
+- action:
+  - data:
+      entity_id: light.family_room_lamp_level
+    service: light.turn_on
+  alias: Home from Work Lights
+  condition: []
+  id: '1513611375843'
+  trigger:
+  - at: '18:15'
+    platform: time
+- action:
+  - data:
+      entity_id: light.family_room_lamp_level
+    service: light.turn_off
+  alias: Bedtime turn off Family Room light
+  condition: []
+  id: '1513611536181'
+  trigger:
+  - at: '22:00'
+    platform: time
+- action:
+  - data:
+      entity_id: media_player.home_group
+    service: media_player.media_play
+  alias: Turn on music
+  condition: []
+  id: '1513628528753'
+  trigger:
+  - at: '18:00'
+    platform: time

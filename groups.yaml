@@ -1,3 +1,25 @@
-MyCameras:
+default:
   view: yes
-  name: Cameras
+  icon: mdi:home
+  entities:
+    - group.default
+    - group.all_lights
+    - group.all_switches
+    - sun.sun
+    
+video:
+  view: yes
+  name: Video
+  entities:
+    - media_player.bazinga
+    - media_player.bedroom_tv
+    - media_player.family_room
+    
+speakers:
+  view: yes
+  name: Speakers
+  entities:
+    - media_player.basement_speaker
+    - media_player.family_room_speaker
+    - media_player.basement_speaker
+    
